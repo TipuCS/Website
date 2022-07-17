@@ -1,1 +1,373 @@
-HELLO
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root{
+    --topBarHeight: 75px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#demo{
+    background-color : green;
+}
+
+.topBar{
+    position:fixed;
+    width: 100vw;
+    height: var(--topBarHeight);
+    z-index: 1;
+    transition: transform 0.2s;
+}
+
+.topBar--hidden{
+    transform: translateY(-75px);
+}
+
+.btn{
+    position: fixed;
+    border: none;
+    font-size: 3vw;
+    text-align: center;
+    opacity: 0.6;
+    transition: 0.3s;
+    width: 10vw;
+    height:75px;
+    z-index: 2;
+    /* background-color: yellow; */
+}
+
+.btn:hover {
+    opacity:1;
+}
+
+/* .btn:focus {
+    font-size: 50px;
+    } */
+
+.topBar:hover{
+    transform: translateY(0px);
+}
+
+.topBarBackground{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: var(--topBarHeight);
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1;
+
+}
+
+.navButtonDiv{
+    position:absolute;
+    left: 20vw;
+    width: 140px;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+    z-index: 2
+}
+
+.navButtonText{
+    position:relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1vw;
+    width: 140px;
+    height:75px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#sec-1{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #3b3a30;
+}
+
+.sec-1-textBox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+
+    
+}
+#sec-1-text{
+    font-family: 'Montserrat';
+    width: 500px;
+    height: 100px;
+    font-size: 3vw;
+    color: white;
+}
+
+#sec-2{
+    height: 100vh;
+    width: 100vw;
+    /* display: flex; */
+    /* background-image: url('./istockphoto-1347310666-170667a.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* background-color: #b2c2bf; */
+    background-color: #ADD8E6;
+}
+
+.sec-2-box{
+    position:relative;
+    width: 80vw;
+    left: 10vw;
+    height: 38vw;
+    top: 5vw;
+    background-color: white;
+    margin:0;
+    box-shadow: 20px 20px 20px;
+
+}
+
+.sec-2-title{
+    position:relative;
+    text-align: center;
+    width: 100%;
+    top: 2vh;
+    font-family: "Oswald";
+    color: black;
+    font-size: 5vw;
+    height: 100px;
+    padding: 10px 10px;
+}
+
+.sec-2-box-box{
+    position:absolute;
+    width: 40%;
+    height: 30%;
+    background-color: #ACA79E;
+}
+.sec-2-box-box-Header{
+    position: absolute;
+    display:flex;
+    left: 2vw;
+    top: 1vw;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    color: #ADD8E6;
+    
+}
+.sec-2-TL-header{
+    position: relative;
+    display:flex;
+    left: 2vw;
+    top: 2vh;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    color: #ADD8E6;
+}
+
+.sec-2-TL-fullBar{
+    position:absolute;
+    height: 2vh;
+    width: 80%;
+    left: 2vw;
+    background-color: #ACA79E;
+}
+.sec-2-TL-leftSide{
+    position:absolute;
+    height: 100%;
+    width: 20%;
+    background-color: lightgreen;
+}
+
+.sec-2-TL-leftSide-text{
+    position: relative;
+    display:flex;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sec-2-TL-rightSide{
+    position:absolute;
+    height: 100%;
+    left: 20%;
+    background-color: green;
+}
+
+.sec-2-TL-rightSide-text{
+    position: absolute;
+    display:flex;
+    left: 90%;
+    top: 20%;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    color: black;
+    font-weight: bold;
+
+}
+
+#play-animation-1{
+    animation: progress-animation-1 3s forwards;
+}
+#play-animation-2{
+    animation: progress-animation-2 3s forwards;
+}
+#play-animation-3{
+    animation: progress-animation-3 3s forwards;
+}
+#play-animation-4{
+    animation: progress-animation-4 3s forwards;
+}
+#play-animation-5{
+    animation: progress-animation-5 3s forwards;
+}
+
+.sec-2-box-box-text{
+    position: relative;
+    display:flex;
+    font-family: 'Montserrat';
+    color: black;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 0;
+    padding-bottom: 0px;
+    padding-right: 5%;
+
+    font-size: 1vw;
+}
+
+
+#sec-3{
+    min-height: 200vh;
+    width: 100%;
+    /* display: flex; */
+    background-color: #eaece5;
+}
+.sec-3-title{
+    position:relative;
+    text-align: center;
+    width: 100%;
+    top: 2vh;
+    font-family: "Oswald";
+    color: black;
+    font-size: 5vw;
+    height: 100px;
+    /* background-color: yellow;; */
+    /* padding: 10px 10px; */
+}
+
+.sec-3-btn{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 15vw;
+    height: 10vh;
+    background-color: ADD8E6;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    z-index: 1;
+    transition: color 300ms ease-in-out;
+    font-size: 2vw;
+}
+
+.sec-3-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: green;
+
+    transform: scaleX(0);
+    transform-origin:left;
+    transition:transform 300ms ease-in-out;
+}
+.sec-3-btn:hover::before,
+.sec-3-btn:focus::before {
+    transform:scaleX(1);
+}
+
+.sec-3-btn:hover,
+.sec-3-btn:focus {
+    color: white;
+}
+
+.sec-3-box{
+    position:relative;
+    width: 80vw;
+    left: 10vw;
+    height: 80vw;
+    top: 5vw;
+    /* background-color: white; */
+    margin:0;
+    /* box-shadow: 20px 20px 20px; */
+}
+.sec-3-box-box{
+    position:absolute;
+    width: 60vw;
+    height: 80vw;
+    left: 15vw;
+    top: -0vh;
+
+    background-color: white;
+    margin:0;
+    box-shadow: 20px 20px 20px;
+
+}
+
+#sec-4{
+    min-height: 30vh;
+    width: 100%;
+    display: flex;
+    background-color: #b2c2bf;
+}
+
+.clickBox{
+    display: block;
+    position:fixed;
+    width: 140px;
+    height: 75px;
+    top:0;
+    /* background-color: aquamarine; */
+    pointer-events: auto;
+}
+
+@keyframes progress-animation-1{
+    0% {width: 0%;}
+    100% {width: 68%;}
+}
+@keyframes progress-animation-2{
+    0% {width: 0%;}
+    100% {width: 52%;}
+}
+@keyframes progress-animation-3{
+    0% {width: 0%;}
+    100% {width: 56%;}
+}
+@keyframes progress-animation-4{
+    0% {width: 0%;}
+    100% {width: 48%;}
+}
+@keyframes progress-animation-5{
+    0% {width: 0%;}
+    100% {width: 60%;}
+}
+
+/* 0.8 = 100% */
+
+/*  */
