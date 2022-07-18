@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        {% load static %}
+        <title>Tipu's Page</title>
+        <meta name="viewport" content="initial-scale=1">
+        <!-- LINK TO A FONT FROM GOOGLE -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+        <link href="{% static '/css/style.css' %}" rel="stylesheet" />
+        <script src="{% static '/javascript/script.js' %}" defer></script>
+
+    </head>
+
+    <body>
+        <div class = "fakebody">
+            <div class = "skill">
+                <div class ="outer">
+                    <div class ="inner">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="topBar">
+            <div class="topBarBackground">
+            </div>
+            <button class="btn", id = "btn0", style = "left: 12vw;", onclick="scrollToPage(0);">Home</button>
+            <button class="btn", id = "btn1", style = "left: 34vw;", onclick="scrollToPage(1);">About</button>
+            <button class="btn", id = "btn2", style = "left: 56vw;", onclick="scrollToPage(2);">Project</button>
+            <button class="btn", id = "btn3", style = "left: 78vw;", onclick="scrollToPage(3);">Contact</button>
+        </div>
+
+        <div id="sec-1">
+            <div class="sec-1-textBox">
+                <h1 id="sec-1-text"></h1>
+            </div>
+        </div>
+
+        <div id="sec-2">
+            <div class = "sec-2-box">
+                <div class = "sec-2-title">Software Engineer</div>
+                <!-- proficient in languages: -->
+                <div class = "sec-2-box-box", style = "left: 5vw; top: 25%;">
+                    <div class = "sec-2-TL-header">Proficient In Languages:</div>
+
+                    <div class = "sec-2-TL-fullBar", style="top: 25%;">
+                        <div class = "sec-2-TL-leftSide">
+                            <div class = "sec-2-TL-leftSide-text">Python</div>
+                        </div>
+                        <div class = "sec-2-TL-rightSide" id = "sec-2-TL-1"></div>
+                    </div>
+
+                    <div class = "sec-2-TL-rightSide-text", style = "top: 22%;">85%</div>
+
+                    <div class = "sec-2-TL-fullBar", style="top: 40%;">
+                        <div class = "sec-2-TL-leftSide">
+                            <div class = "sec-2-TL-leftSide-text">C#</div>
+                        </div>
+                        <div class = "sec-2-TL-rightSide" id = "sec-2-TL-2"></div>
+                    </div>
+
+                    <div class = "sec-2-TL-rightSide-text", style = "top: 38%;">65%</div>
+
+                    <div class = "sec-2-TL-fullBar", style="top: 55%;">
+                        <div class = "sec-2-TL-leftSide">
+                            <div class = "sec-2-TL-leftSide-text">JavaScript</div>
+                        </div>
+                        <div class = "sec-2-TL-rightSide" id = "sec-2-TL-3"></div>
+                    </div>
+
+                    <div class = "sec-2-TL-rightSide-text", style = "top: 53%;">70%</div>
+
+                    <div class = "sec-2-TL-fullBar", style="top: 70%;">
+                        <div class = "sec-2-TL-leftSide">
+                            <div class = "sec-2-TL-leftSide-text">HTML</div>
+                        </div>
+                        <div class = "sec-2-TL-rightSide" id = "sec-2-TL-4"></div>
+                    </div>
+
+                    <div class = "sec-2-TL-rightSide-text", style = "top: 68%;">65%</div>
+
+
+                    <div class = "sec-2-TL-fullBar", style="top: 85%;">
+                        <div class = "sec-2-TL-leftSide">
+                            <div class = "sec-2-TL-leftSide-text">CSS</div>
+                        </div>
+                        <div class = "sec-2-TL-rightSide" id = "sec-2-TL-5"></div>
+                    </div>
+
+                    <div class = "sec-2-TL-rightSide-text", style = "top: 83%;">75%</div>
+
+                </div>
+                <!-- Leetcode Ranking -->
+                <div class = "sec-2-box-box", style = "left: 5vw; top: 65%;">
+                    <div class = "sec-2-TL-header">LeetCode</div>
+                    <div class = "sec-2-box-box-text", style="padding-top:4%;">- Top 40% World Wide (116000th)</div>
+                    <div class = "sec-2-box-box-text"> - Competitor in Contest placed 9000 out of 25000</div>
+                    <div class = "sec-2-box-box-text"> - Completed 9 Problems</div>
+                    
+
+
+                </div>
+                <!-- projects worked on -->
+                <div class = "sec-2-box-box", style = "left: 40vw; top: 25%;">
+                    <div class = "sec-2-TL-header">Projects worked on</div>
+                    <div class = "sec-2-box-box-text", style="padding-top:4%;">- Chess (Python)</div>
+                    <div class = "sec-2-box-box-text">- Learning to Drive (C#)</div>
+                    <div class = "sec-2-box-box-text">- Snake (Python)</div>
+                    <div class = "sec-2-box-box-text">- This Website (html/JavaScript/CSS)</div>
+                    <div class = "sec-2-box-box-text">- MineSweeper (Python)</div>
+                    <div class = "sec-2-box-box-text">- Connect 4 (Python)</div>
+
+                </div>
+                <!-- Why I enjoy programming -->
+                <div class = "sec-2-box-box", style = "left: 40vw; top: 65%;">
+                    <div class = "sec-2-TL-header">About me</div>
+                    <div class = "sec-2-box-box-text", style="padding-top:4%;">I'm an aspiring software engineer who enjoys recreating my favourite games in my spare time.</div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="sec-3">
+            <div class="sec-3-title">My Projects</div>
+            <div class="sec-3-box">
+                <button class="sec-3-btn">Chess</button>
+                <button class="sec-3-btn">Snake</button>
+                <button class="sec-3-btn">Connect 4</button>
+                <button class="sec-3-btn">Minesweeper</button>
+                <div class="sec-3-box-box">
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="sec-4">
+
+        </div>
+
+
+    </body>
+
+</html>

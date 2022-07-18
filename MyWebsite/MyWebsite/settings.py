@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(db)ex#a3kg!7s5$ii+j5-32n3+$+!ey=_&c@7&+pzvccjxcln
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["tipucs.co.uk", "www.tipucs.co.uk", "127.0.0.1"]
 
 
 # Application definition
@@ -55,7 +55,9 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'templates'
+            'Website/MyWebsite/templates',
+            'templates',
+            'MyWebsite/templates'
             ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -122,7 +124,6 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [ os.path.join(BASE_DIR,'static') ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

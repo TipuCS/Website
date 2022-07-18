@@ -128,9 +128,9 @@ html{
     left: 10vw;
     height: 38vw;
     top: 5vw;
-    background-color: white;
+    /* background-color: white; */
     margin:0;
-    box-shadow: 20px 20px 20px;
+    /* box-shadow: 20px 20px 20px; */
 
 }
 
